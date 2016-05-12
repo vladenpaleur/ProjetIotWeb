@@ -199,7 +199,13 @@
       <option name="project" value="LOCAL" />
       <updated>1463064751034</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="optimisation du code 2">
+      <created>1463064817438</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1463064817438</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -212,7 +218,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="3" width="1362" height="724" extended-state="0" />
+    <frame x="1" y="3" width="1362" height="724" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -246,7 +252,8 @@
     <MESSAGE value="Animation de la page de detail des capteurs terminés" />
     <MESSAGE value="optimisation du code" />
     <MESSAGE value="optimisation du code1" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimisation du code1" />
+    <MESSAGE value="optimisation du code 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimisation du code 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
