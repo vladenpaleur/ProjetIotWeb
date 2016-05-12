@@ -1,0 +1,157 @@
+@keyframes transitionBetweenSensors {
+    from
+    {
+        top: 0;
+    }
+
+    to
+    {
+        top: -90vh;
+    }
+}
+
+@-webkit-keyframes transitionBetweenSensors {
+    from
+    {
+        top: 0;
+    }
+
+    to
+    {
+        top: -90vh;
+    }
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    border-bottom: solid black 1px;
+    text-align: center;
+    height: 10vh;
+}
+
+nav, section {
+    height: 90vh;
+    float: left;
+}
+
+nav {
+    width: 30%;
+    border-right: solid black 1px;
+    text-align: center;
+}
+
+
+#ajouterGroupe {
+    display: inline-block;
+    margin: 5%;
+    border-radius: 10px;
+    padding: 1%;
+    width: 10%;
+    margin-top: 7vh;
+}
+
+#suppGroupe {
+    display: inline-block;
+    margin: 5%;
+    border-radius: 10px;
+    padding: 1%;
+    width: 10%;
+    margin-top: 7vh;
+
+}
+
+#nomBouton {
+    text-align: center;
+    display: block;
+    width: 25vh;
+    margin: auto;
+    margin-top: 4vh;
+
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5%;
+    width: 60%;
+    margin-top: 7vh;
+    font-weight: 900;
+}
+
+nav>button.btn{
+    background-color: #269abc;
+    border-color: #122b40;
+}
+
+nav>button.btn:hover{
+    background-color: #269abc;
+    border-color: #122b40;
+}
+nav>button.btn:focus{
+    background-color: #269abc;
+    border-color: #122b40;
+}
+
+nav>button.btn:active:focus{
+    background-color: #269abc;
+    border-color: #122b40;
+}
+
+section {
+    padding-top: 10vh;
+    width: 69%;
+    text-align: center;
+}
+
+#listCapteur {
+    color: black;
+    font-size: 180%;
+}
+
+h3>a{
+    font-size: 4vh;
+    color: #eea236;
+
+}
+
+h3>a:hover{
+    font-size: 4vh;
+    color: #eea236;
+    text-decoration: none;
+}
+
+h3>a:visited{
+    font-size: 4vh;
+    color: #eea236;
+    text-decoration: none;
+
+}
+
+h3>a:focus{
+    font-size: 4vh;
+    color: #eea236;
+    text-decoration: none;
+}
+
+p{
+    display: inline-block;
+    padding: 5vh;
+    font-size: 3vh;
+}
+
+#detailCapteur {
+    display: none;
+    width: 70%;
+    margin-left: 30%;
+    background-color: white;
+    z-index: 100;
+    position: relative;
+    top: 0;
+    height: 100vh;
+}
+
