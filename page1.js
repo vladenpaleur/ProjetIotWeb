@@ -62,6 +62,10 @@ function afficherCapteurMaison() {
 }
 
 function afficherCapteurGarage(){
+    if(divDetailCapteur.style.display == "inline-block") {
+        divDetailCapteur.style.animation = "transitionBetweenSensors 1s backwards";
+        divDetailCapteur.style.display = "none";
+    }
 
     var sectionAffiche = document.getElementById("afficheCapteurs");
     sectionAffiche.innerHTML = "";
@@ -93,6 +97,10 @@ function afficherCapteurGarage(){
 }
 
 function afficherCapteurEntreprise() {
+    if(divDetailCapteur.style.display == "inline-block") {
+        divDetailCapteur.style.animation = "transitionBetweenSensors 1s backwards";
+        divDetailCapteur.style.display = "none";
+    }
     var sectionAffiche = document.getElementById("afficheCapteurs");
     sectionAffiche.innerHTML = "";
 
