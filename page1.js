@@ -14,12 +14,12 @@ var tableauCapteurEntreprise = [["Capteur 4", 5, 20, 80, ("10-05-2016")]];
 
 var divDetailCapteur = document.getElementById("detailCapteur");
 
-function afficheDetailsCapteurs(capteur)
+function afficheDetailsCapteursMaison(capteur)
 {
     divDetailCapteur.style.animation = "transitionBetweenSensors 1s forwards";
     divDetailCapteur.style.display = "inline-block";
     divDetailCapteur.innerHTML = tableauCapteurMaison[capteur][0];
-};
+}
 
 
 function afficherCapteurMaison() {
@@ -38,7 +38,7 @@ function afficherCapteurMaison() {
         lienCapteur.data = i;
         lienCapteur.addEventListener('click', function()
         {
-            afficheDetailsCapteurs(this.data);
+            afficheDetailsCapteursMaison(this.data);
             console.log(this.data);
         });// = "#"+tableauCapteurMaison[i][0];
         lienCapteur.innerHTML = tableauCapteurMaison[i][0];
@@ -61,8 +61,15 @@ function afficherCapteurMaison() {
 
 }
 
-function afficherCapteurGarage(){
-    if(divDetailCapteur.style.display == "inline-block") {
+function afficheDetailsCapteursGarage(capteur)
+{
+    divDetailCapteur.style.animation = "transitionBetweenSensors 1s forwards";
+    divDetailCapteur.style.display = "inline-block";
+    divDetailCapteur.innerHTML = tableauCapteurGarage[capteur][0];
+}
+
+function afficherCapteurGarage() {
+    if (divDetailCapteur.style.display == "inline-block") {
         divDetailCapteur.style.animation = "transitionBetweenSensors 1s backwards";
         divDetailCapteur.style.display = "none";
     }
@@ -70,19 +77,23 @@ function afficherCapteurGarage(){
     var sectionAffiche = document.getElementById("afficheCapteurs");
     sectionAffiche.innerHTML = "";
 
-    for(var i=0; i<tableauCapteurGarage.length; i++)
-    {
+    for (var i = 0; i < tableauCapteurGarage.length; i++) {
         var conteneur = document.createElement("div");
         var titreCapteur = document.createElement("h3");
         var lienCapteur = document.createElement("a");
-        lienCapteur.href = "#"+tableauCapteurGarage[i][0];
+        lienCapteur.data = i;
+        lienCapteur.addEventListener('click', function () {
+            afficheDetailsCapteursGarage(this.data);
+            console.log(this.data);
+        });
+
         lienCapteur.innerHTML = tableauCapteurGarage[i][0];
         var temperatureCapteur = document.createElement("p");
-        temperatureCapteur.innerHTML = tableauCapteurGarage[i][1]+"&deg;";
+        temperatureCapteur.innerHTML = tableauCapteurGarage[i][1] + "&deg;";
         var minimumCapteur = document.createElement("p");
-        minimumCapteur.innerHTML = tableauCapteurGarage[i][2]+"&deg;";
+        minimumCapteur.innerHTML = tableauCapteurGarage[i][2] + "&deg;";
         var maximumCapteur = document.createElement("p");
-        maximumCapteur.innerHTML = tableauCapteurGarage[i][3]+"&deg;";
+        maximumCapteur.innerHTML = tableauCapteurGarage[i][3] + "&deg;";
 
         titreCapteur.appendChild(lienCapteur);
         conteneur.appendChild(titreCapteur);
@@ -94,6 +105,13 @@ function afficherCapteurGarage(){
 
 
     }
+}
+
+function afficheDetailsCapteursEntreprise(capteur)
+{
+    divDetailCapteur.style.animation = "transitionBetweenSensors 1s forwards";
+    divDetailCapteur.style.display = "inline-block";
+    divDetailCapteur.innerHTML = tableauCapteurEntreprise[capteur][0];
 }
 
 function afficherCapteurEntreprise() {
@@ -108,7 +126,12 @@ function afficherCapteurEntreprise() {
         var conteneur = document.createElement("div");
         var titreCapteur = document.createElement("h3");
         var lienCapteur = document.createElement("a");
-        lienCapteur.href = "#"+tableauCapteurEntreprise[i][0];
+        lienCapteur.data = i;
+        lienCapteur.addEventListener('click', function()
+        {
+            afficheDetailsCapteursEntreprise(this.data);
+            console.log(this.data);
+        });
         lienCapteur.innerHTML = tableauCapteurEntreprise[i][0];
         var temperatureCapteur = document.createElement("p");
         temperatureCapteur.innerHTML = tableauCapteurEntreprise[i][1] + "&deg;";
