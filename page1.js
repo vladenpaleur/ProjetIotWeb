@@ -2,7 +2,6 @@
  * Created by Priscillia on 04/05/2016.
  */
 
-
 var tableauCapteurMaison = [["Capteur 1", 25, 10, 30, ("04-05-2016")], ["Capteur 2", 35, 5, 40, ("04-05-2016")]];
 var tableauCapteurGarage = [["Capteur 1", -4, 0, 15, ("10-05-2016")], ["Capteur 3", -10, 5, 20, ("10-05-2016")]];
 var tableauCapteurEntreprise = [["Capteur 4", 5, 20, 80, ("10-05-2016")]];
