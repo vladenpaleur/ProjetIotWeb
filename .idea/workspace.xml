@@ -5264,8 +5264,8 @@
       <file leaf-file-name="page1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29882812">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.33203125">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -5485,7 +5485,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="3" width="1362" height="724" extended-state="0" />
+    <frame x="1" y="3" width="1362" height="724" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -5523,7 +5523,8 @@
     <MESSAGE value="optimisation du code 2" />
     <MESSAGE value="site web modifier" />
     <MESSAGE value="Amelioration css de l'animation de la page de detail des capteurs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Amelioration css de l'animation de la page de detail des capteurs" />
+    <MESSAGE value="Finition du style de l'animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finition du style de l'animation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -5604,8 +5605,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29882812">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33203125">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>

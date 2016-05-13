@@ -71,7 +71,7 @@ function logOut() {
         echo "Vous avez été déconecté avec succés<br>";
         echo '<p><a href="?action=logIn">Connection</a></p>';
     } else {
-        header("Location: ?action=logIn", TRUE, 301); 
+        header("Location: ?action=logIn", TRUE, 301);
     };
     if (isset($_SESSION['login'])) { session_unset($_SESSION['login']); };
     exit;
