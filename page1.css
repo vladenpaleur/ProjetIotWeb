@@ -144,6 +144,11 @@ p{
     font-size: 3vh;
 }
 
+#afficheCapteurs>h3 {
+    text-transform: capitalize;
+
+}
+
 #detailCapteur {
     display: none;
     width: 70%;
@@ -153,5 +158,12 @@ p{
     position: relative;
     top: 0;
     height: 100vh;
+}
+
+#detailCapteur>h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: #0086b3;
+
 }
 

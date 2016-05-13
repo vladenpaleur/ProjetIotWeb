@@ -5,29 +5,29 @@
 // Les données de capteurs triées par capteur et groupe
 var grpCapteurs = {
     "maison":{
-        "capteur1": {
+        "capteur 1": {
             data: [25, 10, 30],
             time: ("04-05-2016")
         },
-        "capteur2": {
+        "capteur 2": {
             data: [35, 5, 40],
             time: ("10-05-2016")
         }
     },
     "garage": {
-        "capteur1": {
-            data: [],
-            time: ("")
+        "capteur 1": {
+            data: [-4, 0, 5],
+            time: ("13-05-2016")
         },
-        "capteur3": {
-            data: [],
-            time: ("")
+        "capteur 3": {
+            data: [5, 15, 20],
+            time: ("13-05-2016")
         }
     },
     "entreprise": {
-        "capteur4": {
-            data: [],
-            time: ("")
+        "capteur 4": {
+            data: [20, 25, 30],
+            time: ("13-05-2016")
         }
     }
 };
