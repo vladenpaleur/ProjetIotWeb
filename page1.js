@@ -38,7 +38,7 @@ function afficheDetailsCapteurs(grp, capteur){
     divDetailCapteur.style.animation = "transitionBetweenSensors 1s forwards";
     divDetailCapteur.style.display = "inline-block";
     divDetailCapteur.innerHTML = "<h1>"+ grp +"</h1>" +
-        "<h2>" + capteur + "</h2>";
+        "<h2>" + capteur + "</h2>" + "<p>" + [grp[capteur.data]] + "</p>";
 }
 
 function afficherCapteur(grp){

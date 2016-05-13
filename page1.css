@@ -22,6 +22,35 @@
     }
 }
 
+@media (max-width: 975px) {
+    h1{
+        font-size: 5vh;
+    }
+    .btn{
+        font-size: 2vh;
+    }
+}
+
+@media (max-width: 889px) {
+    h1{
+        font-size: 5vh;
+    }
+}
+
+@media (max-width: 718px) {
+    h1{
+        font-size: 4vh;
+    }
+    .btn{
+        font-size: 2vh;
+    }
+    #nomBouton{
+        max-width: 25vw;
+        font-size: 2vw;
+
+    }
+}
+
 body {
     margin: 0;
     overflow: hidden;
@@ -114,6 +143,7 @@ section {
 }
 
 h3>a{
+    text-transform: capitalize;
     font-size: 4vh;
     color: #eea236;
 
@@ -144,10 +174,6 @@ p{
     font-size: 3vh;
 }
 
-#afficheCapteurs>h3 {
-    text-transform: capitalize;
-
-}
 
 #detailCapteur {
     display: none;
@@ -164,6 +190,15 @@ p{
     text-align: center;
     text-transform: capitalize;
     color: #0086b3;
+    font-size: 4vh;
+    margin-top: 15vh;
+
+}
+
+#detailCapteur>h2 {
+    font-size: 3vh;
+    text-transform: capitalize;
+    margin-left: 5vh;
 
 }
 
