@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<div id="temperature"></div>
+
+</body>
+
+<script src="MQTT.js-master/mqtt.js"></script>
+
+<script>
+
+    var mqtt = require('mqtt');
+    var client = mqtt.connect('mqtt://messagesight.demos.ibm.com:1883');
+
+    client.on('connect', function() { // When connected
+
+// subscribe to a topic
+        client.subscribe('ingesupb2/#', function() {
+
+            client.on('message', function(topic, message, packet) {
+                console.log("Received '" + message + "' on '" + topic + "'");
+            });
+        });
+    });
+</script>
+
+
+
+</html>
